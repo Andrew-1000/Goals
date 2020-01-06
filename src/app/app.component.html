@@ -296,8 +296,14 @@
 </style>
 
 <!-- Toolbar -->
-<div>My Goals</div>
-<p>My Goal for Today is {{ goal }}</p>
+<div>
+  <h1>My Goals</h1>
+  <ul>
+    <li *ngFor = 'let goal of goals'>
+      {{goal}}
+    </li>
+  </ul>
+</div>
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
