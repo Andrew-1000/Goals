@@ -9,13 +9,12 @@ import { Goal } from './goal'
 export class AppComponent {
 
   goals:Goal [] = [
-    {id:1, name: 'Watch Finding Nemo', description:'Movie'},
-    {id:2, name:'Buy Cookies',description:'Movie'},
-    {id:3, name:'Get new Phone Case',description:'Movie'},
-    {id:4, name:'Get Dog Food', description:'Movie'},
-    {id:5, name:'Solve mat homework', description:'Movie'},
-    {id:6, name:'Plot my world domination plan', description:'Movie'},
-
+    new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
+    new Goal(2,'Buy Cookies','I have to buy cookies for the parrot'),
+    new Goal(3,'Get new Phone Case','Diana has her birthday coming up soon'),
+    new Goal(4,'Get Dog Food','Pupper likes expensive snacks'),
+    new Goal(5,'Solve math homework','Damn Math'),
+    new Goal(6,'Plot my world domination plan','Cause I am an evil overlord'),
   ];
 
 }
